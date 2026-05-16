@@ -6,47 +6,68 @@ nav:
   notes: "学习笔记"
 
 home:
-  title: "陈辑文"
-  subtitle: "物理学者"
+  title: "陈集文"
+  subtitle: "博士研究生"
   affiliation: "西湖大学"
   bio: >
-    我是西湖大学的物理学者。我的研究方向包括凝聚态理论、量子多体系统以及计算物理。
-  email: "jiwen@westlake.edu.cn"
+    我是西湖大学的博士研究生，导师为周艳教授。我的研究方向集中于相互作用量子多体系统，
+    特别是量子磁性和自旋系统的相变问题，使用随机级数展开量子蒙特卡洛（SSE QMC）算法
+    进行研究。同时，我也对磁性斯格明子、畴壁双半子（domain-wall bimerons）及其
+    电流驱动动力学感兴趣。
+  email: "chenjiwen@westlake.edu.cn"
+  google_scholar: ""
+  orcid: ""
+
+education:
+  title: "教育背景"
+  items:
+    - period: "2026年8月 – 至今"
+      institution: "西湖大学"
+      degree: "博士研究生"
+      supervisor: "周艳教授"
+    - period: "2020年9月 – 2024年6月"
+      institution: "深圳技术大学"
+      degree: "应用物理学学士"
 
 research:
   title: "研究方向"
   items:
-    - title: "凝聚态理论"
-      description: "探索强关联电子系统中的涌现现象。"
-      icon: "🔬"
-    - title: "量子多体系统"
-      description: "发展量子多体问题的解析与数值方法。"
-      icon: "⚛️"
-    - title: "计算物理"
-      description: "利用高性能计算与机器学习进行物理模拟。"
-      icon: "📐"
-    - title: "统计力学"
-      description: "相变、临界现象与非平衡动力学。"
-      icon: "📊"
+    - title: "量子磁性与自旋系统"
+      description: >
+        利用随机级数展开量子蒙特卡洛（SSE QMC）模拟方法研究
+        量子自旋系统的相变和临界现象。
+      icon: "🧲"
+    - title: "磁性斯格明子与双半子"
+      description: >
+        研究斯格明子和畴壁双半子等拓扑磁性结构，以及它们的
+        电流驱动动力学，为下一代自旋电子学器件提供理论基础。
+      icon: "🌀"
+    - title: "计算凝聚态物理"
+      description: >
+        开发和应用数值方法——包括量子蒙特卡洛、微磁模拟和
+        原子自旋动力学——来理解关联材料中的涌现现象。
+      icon: "💻"
+    - title: "自旋电子学"
+      description: >
+        探索自旋输运、磁化动力学与拓扑自旋结构之间的相互作用，
+        以实现高能效的信息存储与处理。
+      icon: "⚡"
 
 publications:
   title: "学术成果"
-  subtitle: "代表性论文"
+  subtitle: ""
 
 projects:
   title: "项目"
   items:
-    - title: "量子模拟器"
-      description: "用于模拟量子多体系统的开源框架。"
-      url: "https://github.com/jwphys"
-    - title: "格点蒙特卡洛"
-      description: "用于格点场论的高性能蒙特卡洛库。"
+    - title: "SSE QMC 求解器"
+      description: "用于模拟量子自旋系统的随机级数展开量子蒙特卡洛代码。"
       url: "https://github.com/jwphys"
 
 notes:
   title: "学习笔记"
-  subtitle: "物理、数学与编程笔记。"
+  subtitle: "关于凝聚态物理、量子磁性和计算方法的笔记。"
 
 footer:
-  copyright: "© 2026 陈辑文. 保留所有权利。"
+  copyright: "© 2026 陈集文. 保留所有权利。"
   lang_toggle: "中 / EN"

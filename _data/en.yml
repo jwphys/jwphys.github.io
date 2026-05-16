@@ -7,46 +7,72 @@ nav:
 
 home:
   title: "Jiwen Chen"
-  subtitle: "Physicist"
+  subtitle: "PhD Student"
   affiliation: "Westlake University"
   bio: >
-    I am a physicist at Westlake University. My research explores the frontiers of
-    condensed matter theory, quantum many-body systems, and computational physics.
-  email: "jiwen@westlake.edu.cn"
+    I am a PhD student at Westlake University, working under the supervision of
+    Prof. Yan Zhou. My research focuses on interacting quantum many-body systems,
+    particularly quantum magnetism and phase transitions of spin systems, using
+    stochastic series expansion quantum Monte Carlo (SSE QMC) algorithms.
+    I am also interested in magnetic skyrmions, domain-wall bimerons, and their
+    current-driven dynamics.
+  email: "chenjiwen@westlake.edu.cn"
+  google_scholar: ""
+  orcid: ""
+
+education:
+  title: "Education"
+  items:
+    - period: "08.2026 – Present"
+      institution: "Westlake University"
+      degree: "PhD Student"
+      supervisor: "Prof. Yan Zhou"
+    - period: "09.2020 – 06.2024"
+      institution: "Shenzhen Technology University"
+      degree: "B.S. in Applied Physics"
 
 research:
   title: "Research Interests"
   items:
-    - title: "Condensed Matter Theory"
-      description: "Exploring emergent phenomena in strongly correlated electron systems."
-      icon: "🔬"
-    - title: "Quantum Many-Body Systems"
-      description: "Developing analytical and numerical methods for quantum many-body problems."
-      icon: "⚛️"
-    - title: "Computational Physics"
-      description: "Leveraging high-performance computing and machine learning for physical simulations."
-      icon: "📐"
-    - title: "Statistical Mechanics"
-      description: "Phase transitions, critical phenomena, and non-equilibrium dynamics."
-      icon: "📊"
+    - title: "Quantum Magnetism & Spin Systems"
+      description: >
+        Investigating phase transitions and critical phenomena in quantum
+        spin systems using stochastic series expansion quantum Monte Carlo
+        (SSE QMC) simulations.
+      icon: "🧲"
+    - title: "Magnetic Skyrmions & Bimerons"
+      description: >
+        Studying topological magnetic textures such as skyrmions and
+        domain-wall bimerons, and their current-driven dynamics for
+        next-generation spintronic devices.
+      icon: "🌀"
+    - title: "Computational Condensed Matter"
+      description: >
+        Developing and applying numerical methods — including QMC,
+        micromagnetic simulations, and atomistic spin dynamics — to
+        understand emergent phenomena in correlated materials.
+      icon: "💻"
+    - title: "Spintronics"
+      description: >
+        Exploring the interplay between spin transport, magnetization
+        dynamics, and topological spin textures for energy-efficient
+        information storage and processing.
+      icon: "⚡"
 
 publications:
-  title: "Research Output"
-  subtitle: "Selected Publications"
+  title: "Publications"
+  subtitle: ""
 
 projects:
   title: "Projects"
   items:
-    - title: "Quantum Simulator"
-      description: "An open-source framework for simulating quantum many-body systems."
-      url: "https://github.com/jwphys"
-    - title: "Lattice Monte Carlo"
-      description: "High-performance Monte Carlo library for lattice field theory."
+    - title: "SSE QMC Solver"
+      description: "Stochastic series expansion quantum Monte Carlo code for simulating quantum spin systems."
       url: "https://github.com/jwphys"
 
 notes:
   title: "Study Notes"
-  subtitle: "Notes on physics, mathematics, and programming."
+  subtitle: "Notes on condensed matter physics, quantum magnetism, and computational methods."
 
 footer:
   copyright: "© 2026 Jiwen Chen. All rights reserved."
