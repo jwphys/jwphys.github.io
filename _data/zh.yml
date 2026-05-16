@@ -10,7 +10,7 @@ home:
   subtitle: "博士研究生"
   affiliation: "西湖大学"
   bio: >
-    我是西湖大学的博士研究生，导师为周艳教授。我的研究方向集中于相互作用量子多体系统，
+    我是西湖大学的博士研究生，导师为郑毅教授。我的研究方向集中于相互作用量子多体系统，
     特别是量子磁性和自旋系统的相变问题，使用随机级数展开量子蒙特卡洛（SSE QMC）算法
     进行研究。同时，我也对磁性斯格明子、畴壁双半子（domain-wall bimerons）及其
     电流驱动动力学感兴趣。
@@ -24,7 +24,7 @@ education:
     - period: "2026年8月 – 至今"
       institution: "西湖大学"
       degree: "博士研究生"
-      supervisor: "周艳教授"
+      supervisor: "郑毅教授"
     - period: "2020年9月 – 2024年6月"
       institution: "深圳技术大学"
       degree: "应用物理学学士"
@@ -32,26 +32,20 @@ education:
 research:
   title: "研究方向"
   items:
-    - title: "量子磁性与自旋系统"
-      description: >
-        利用随机级数展开量子蒙特卡洛（SSE QMC）模拟方法研究
-        量子自旋系统的相变和临界现象。
+    - title: "量子磁性"
       icon: "🧲"
-    - title: "磁性斯格明子与双半子"
-      description: >
-        研究斯格明子和畴壁双半子等拓扑磁性结构，以及它们的
-        电流驱动动力学，为下一代自旋电子学器件提供理论基础。
-      icon: "🌀"
-    - title: "计算凝聚态物理"
-      description: >
-        开发和应用数值方法——包括量子蒙特卡洛、微磁模拟和
-        原子自旋动力学——来理解关联材料中的涌现现象。
-      icon: "💻"
+      topics:
+        - "SSE 量子蒙特卡洛算法"
+        - "量子相变与临界现象"
+        - "多体纠缠"
+        - "量子信息"
     - title: "自旋电子学"
-      description: >
-        探索自旋输运、磁化动力学与拓扑自旋结构之间的相互作用，
-        以实现高能效的信息存储与处理。
       icon: "⚡"
+      topics:
+        - "磁性斯格明子与畴壁双半子"
+        - "电流驱动自旋动力学"
+        - "微磁模拟 (MuMax3)"
+        - "赛道存储器器件"
 
 publications:
   title: "学术成果"
@@ -60,8 +54,14 @@ publications:
 projects:
   title: "项目"
   items:
-    - title: "SSE QMC 求解器"
-      description: "用于模拟量子自旋系统的随机级数展开量子蒙特卡洛代码。"
+    - title: "纠缠谱"
+      description: "研究量子多体系统中的纠缠谱和对称性分辨纠缠。"
+      url: "https://github.com/jwphys"
+    - title: "共形塔"
+      description: "探索量子自旋链中的共形塔与边界临界现象。"
+      url: "https://github.com/jwphys"
+    - title: "表面临界"
+      description: "研究强关联系统中的表面临界行为与边界效应。"
       url: "https://github.com/jwphys"
 
 notes:

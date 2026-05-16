@@ -11,7 +11,7 @@ home:
   affiliation: "Westlake University"
   bio: >
     I am a PhD student at Westlake University, working under the supervision of
-    Prof. Yan Zhou. My research focuses on interacting quantum many-body systems,
+    Prof. Zheng Yan. My research focuses on interacting quantum many-body systems,
     particularly quantum magnetism and phase transitions of spin systems, using
     stochastic series expansion quantum Monte Carlo (SSE QMC) algorithms.
     I am also interested in magnetic skyrmions, domain-wall bimerons, and their
@@ -26,7 +26,7 @@ education:
     - period: "08.2026 – Present"
       institution: "Westlake University"
       degree: "PhD Student"
-      supervisor: "Prof. Yan Zhou"
+      supervisor: "Prof. Zheng Yan"
     - period: "09.2020 – 06.2024"
       institution: "Shenzhen Technology University"
       degree: "B.S. in Applied Physics"
@@ -34,30 +34,20 @@ education:
 research:
   title: "Research Interests"
   items:
-    - title: "Quantum Magnetism & Spin Systems"
-      description: >
-        Investigating phase transitions and critical phenomena in quantum
-        spin systems using stochastic series expansion quantum Monte Carlo
-        (SSE QMC) simulations.
+    - title: "Quantum Magnetism"
       icon: "🧲"
-    - title: "Magnetic Skyrmions & Bimerons"
-      description: >
-        Studying topological magnetic textures such as skyrmions and
-        domain-wall bimerons, and their current-driven dynamics for
-        next-generation spintronic devices.
-      icon: "🌀"
-    - title: "Computational Condensed Matter"
-      description: >
-        Developing and applying numerical methods — including QMC,
-        micromagnetic simulations, and atomistic spin dynamics — to
-        understand emergent phenomena in correlated materials.
-      icon: "💻"
+      topics:
+        - "SSE quantum Monte Carlo algorithms"
+        - "Quantum phase transitions & critical phenomena"
+        - "Many-body entanglement"
+        - "Quantum information"
     - title: "Spintronics"
-      description: >
-        Exploring the interplay between spin transport, magnetization
-        dynamics, and topological spin textures for energy-efficient
-        information storage and processing.
       icon: "⚡"
+      topics:
+        - "Magnetic skyrmions & domain-wall bimerons"
+        - "Current-driven spin dynamics"
+        - "Micromagnetic simulations (MuMax3)"
+        - "Racetrack memory devices"
 
 publications:
   title: "Publications"
@@ -66,8 +56,14 @@ publications:
 projects:
   title: "Projects"
   items:
-    - title: "SSE QMC Solver"
-      description: "Stochastic series expansion quantum Monte Carlo code for simulating quantum spin systems."
+    - title: "Entanglement Spectrum"
+      description: "Investigating entanglement spectrum and symmetry-resolved entanglement in quantum many-body systems."
+      url: "https://github.com/jwphys"
+    - title: "Conformal Tower"
+      description: "Probing conformal towers and boundary critical phenomena in quantum spin chains."
+      url: "https://github.com/jwphys"
+    - title: "Surface Criticality"
+      description: "Studying surface critical behavior and boundary effects in strongly correlated systems."
       url: "https://github.com/jwphys"
 
 notes:

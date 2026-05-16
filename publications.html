@@ -13,13 +13,15 @@ i18n: publications.title
     <div class="pub-content">
       <div class="pub-title">{{ pub.title }}</div>
       <div class="pub-authors">{{ pub.authors }}</div>
-      <div class="pub-journal">{{ pub.journal }}</div>
+      <div class="pub-journal">
+        {% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">{% endif %}
+        {{ pub.journal }} {% if pub.volpage %}{{ pub.volpage }}{% endif %}
+        {% if pub.doi %}</a>{% endif %}
+        {% if pub.arxiv %} | <a href="https://arxiv.org/abs/{{ pub.arxiv }}" target="_blank" rel="noopener">arXiv:{{ pub.arxiv }}</a>{% endif %}
+      </div>
       {% if pub.summary %}
       <div class="pub-summary">{{ pub.summary }}</div>
       {% endif %}
-      <div class="pub-links">
-        {% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">DOI →</a>{% endif %}
-      </div>
     </div>
   </li>
   {% endfor %}

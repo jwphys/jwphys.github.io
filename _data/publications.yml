@@ -1,8 +1,10 @@
 - year: 2025
   title: "Current-induced Dynamics of Bloch Domain-wall Bimerons"
   authors: "J. Chen, X. Li, L. Shen, Z. Wang, H. Zhang, A. Litvinenko, J. Åkerman, X. Xu, O. Tretiakov, Y. Zhou"
-  journal: "Physical Review B, 112, 224420"
+  journal: "Phys. Rev. B"
+  volpage: "112, 224420"
   doi: "10.1103/8sdx-9lry"
+  arxiv: "2505.00959"
   summary: >
     We investigate the current-driven dynamics of Bloch domain-wall bimerons
     using micromagnetic simulations and analytical modeling. Our results
@@ -14,8 +16,10 @@
 - year: 2025
   title: "Magnetic Bimeron Traveling on the Domain Wall"
   authors: "J. Chen, L. Shen, H. An, X. Zhang, H. Zhang, H. Du, X. Li, Y. Zhou"
-  journal: "Applied Physics Letters, 126, 142402"
+  journal: "Appl. Phys. Lett."
+  volpage: "126, 142402"
   doi: "10.1063/5.0249927"
+  arxiv: "2404.15810"
   summary: >
     We report the discovery of a magnetic bimeron traveling stably along a
     domain wall. Using micromagnetic simulations, we reveal the underlying

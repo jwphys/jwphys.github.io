@@ -8,7 +8,11 @@ i18n: research.title
   <div class="research-card">
     <span class="icon">{{ item.icon }}</span>
     <h3>{{ item.title }}</h3>
-    <p>{{ item.description }}</p>
+    <ul class="topic-list">
+      {% for topic in item.topics %}
+      <li>{{ topic }}</li>
+      {% endfor %}
+    </ul>
   </div>
   {% endfor %}
 </div>
