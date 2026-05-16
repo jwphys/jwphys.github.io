@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" rx="100" fill="#faf8f5"/>
+  <!-- Bear doll face -->
+  <circle cx="100" cy="95" r="50" fill="#d4a574"/>
+  <!-- Ears -->
+  <circle cx="60" cy="55" r="18" fill="#d4a574"/>
+  <circle cx="60" cy="55" r="10" fill="#e8c4a0"/>
+  <circle cx="140" cy="55" r="18" fill="#d4a574"/>
+  <circle cx="140" cy="55" r="10" fill="#e8c4a0"/>
+  <!-- Inner face -->
+  <circle cx="100" cy="100" r="38" fill="#e8c4a0"/>
+  <!-- Eyes -->
+  <circle cx="82" cy="90" r="5" fill="#2c2c2c"/>
+  <circle cx="118" cy="90" r="5" fill="#2c2c2c"/>
+  <!-- Eye shine -->
+  <circle cx="84" cy="88" r="2" fill="white"/>
+  <circle cx="120" cy="88" r="2" fill="white"/>
+  <!-- Nose -->
+  <ellipse cx="100" cy="105" rx="6" ry="4" fill="#2c2c2c"/>
+  <!-- Mouth -->
+  <path d="M94 112 Q100 120 106 112" stroke="#2c2c2c" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <!-- Glasses (scholar vibe) -->
+  <circle cx="82" cy="90" r="16" fill="none" stroke="#5b8a72" stroke-width="1.5"/>
+  <circle cx="118" cy="90" r="16" fill="none" stroke="#5b8a72" stroke-width="1.5"/>
+  <line x1="98" y1="90" x2="102" y2="90" stroke="#5b8a72" stroke-width="1.5"/>
+</svg>

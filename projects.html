@@ -1,0 +1,13 @@
+---
+layout: page
+title: Projects
+i18n: projects.title
+---
+<div class="project-list">
+  {% for item in site.data[site.lang].projects.items %}
+  <div class="project-item">
+    <h3><a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.title }}</a></h3>
+    <p>{{ item.description }}</p>
+  </div>
+  {% endfor %}
+</div>

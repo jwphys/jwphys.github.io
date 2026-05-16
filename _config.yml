@@ -1,0 +1,38 @@
+title: "Jiwen Chen"
+email: jiwen@example.com
+description: >-
+  Personal academic website of Jiwen Chen — Physicist at Westlake University.
+baseurl: ""
+url: "https://jwphys.github.io"
+
+github_username: jwphys
+google_scholar: ""
+orcid: ""
+
+lang: en
+available_langs: [en, zh]
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-paginate
+
+paginate: 5
+paginate_path: "/notes/page:num/"
+
+permalink: /notes/:year/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      lang: en
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .github

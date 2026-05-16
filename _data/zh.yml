@@ -1,0 +1,52 @@
+nav:
+  home: "首页"
+  research: "研究方向"
+  publications: "学术成果"
+  projects: "项目"
+  notes: "学习笔记"
+
+home:
+  title: "陈辑文"
+  subtitle: "物理学者"
+  affiliation: "西湖大学"
+  bio: >
+    我是西湖大学的物理学者。我的研究方向包括凝聚态理论、量子多体系统以及计算物理。
+  email: "jiwen@westlake.edu.cn"
+
+research:
+  title: "研究方向"
+  items:
+    - title: "凝聚态理论"
+      description: "探索强关联电子系统中的涌现现象。"
+      icon: "🔬"
+    - title: "量子多体系统"
+      description: "发展量子多体问题的解析与数值方法。"
+      icon: "⚛️"
+    - title: "计算物理"
+      description: "利用高性能计算与机器学习进行物理模拟。"
+      icon: "📐"
+    - title: "统计力学"
+      description: "相变、临界现象与非平衡动力学。"
+      icon: "📊"
+
+publications:
+  title: "学术成果"
+  subtitle: "代表性论文"
+
+projects:
+  title: "项目"
+  items:
+    - title: "量子模拟器"
+      description: "用于模拟量子多体系统的开源框架。"
+      url: "https://github.com/jwphys"
+    - title: "格点蒙特卡洛"
+      description: "用于格点场论的高性能蒙特卡洛库。"
+      url: "https://github.com/jwphys"
+
+notes:
+  title: "学习笔记"
+  subtitle: "物理、数学与编程笔记。"
+
+footer:
+  copyright: "© 2026 陈辑文. 保留所有权利。"
+  lang_toggle: "中 / EN"

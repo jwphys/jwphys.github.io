@@ -1,0 +1,19 @@
+- year: 2024
+  title: "Quantum Phase Transitions in Strongly Correlated Systems"
+  authors: "J. Chen, X. Wang, L. Zhang"
+  journal: "Physical Review Letters, 132, 156701"
+  doi: "10.1103/PhysRevLett.132.156701"
+  arxiv: "2401.12345"
+
+- year: 2023
+  title: "Machine Learning Approaches for Many-Body Localization"
+  authors: "J. Chen, Y. Liu"
+  journal: "Nature Computational Science, 3, 234"
+  doi: "10.1038/s43588-023-00456-7"
+  arxiv: "2303.06789"
+
+- year: 2022
+  title: "Tensor Network Methods for Frustrated Quantum Magnets"
+  authors: "J. Chen, M. Suzuki"
+  journal: "Physical Review B, 105, 184412"
+  doi: "10.1103/PhysRevB.105.184412"

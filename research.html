@@ -1,0 +1,14 @@
+---
+layout: page
+title: Research
+i18n: research.title
+---
+<div class="research-grid">
+  {% for item in site.data[site.lang].research.items %}
+  <div class="research-card">
+    <span class="icon">{{ item.icon }}</span>
+    <h3>{{ item.title }}</h3>
+    <p>{{ item.description }}</p>
+  </div>
+  {% endfor %}
+</div>

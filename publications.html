@@ -1,0 +1,24 @@
+---
+layout: page
+title: Publications
+i18n: publications.title
+---
+<p data-i18n="publications.subtitle">{{ site.data[site.lang].publications.subtitle }}</p>
+
+<ul class="pub-list">
+  {% for pub in site.data.publications reversed %}
+  <li class="pub-item">
+    <span class="pub-year">{{ pub.year }}</span>
+    <div class="pub-content">
+      <div class="pub-title">{{ pub.title }}</div>
+      <div class="pub-authors">{{ pub.authors }}</div>
+      <div class="pub-journal">{{ pub.journal }}</div>
+      <div class="pub-links">
+        {% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
+        {% if pub.pdf %}<a href="{{ pub.pdf }}" target="_blank" rel="noopener">PDF</a>{% endif %}
+        {% if pub.arxiv %}<a href="https://arxiv.org/abs/{{ pub.arxiv }}" target="_blank" rel="noopener">arXiv</a>{% endif %}
+      </div>
+    </div>
+  </li>
+  {% endfor %}
+</ul>

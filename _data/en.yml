@@ -1,0 +1,53 @@
+nav:
+  home: "Home"
+  research: "Research"
+  publications: "Publications"
+  projects: "Projects"
+  notes: "Study Notes"
+
+home:
+  title: "Jiwen Chen"
+  subtitle: "Physicist"
+  affiliation: "Westlake University"
+  bio: >
+    I am a physicist at Westlake University. My research explores the frontiers of
+    condensed matter theory, quantum many-body systems, and computational physics.
+  email: "jiwen@westlake.edu.cn"
+
+research:
+  title: "Research Interests"
+  items:
+    - title: "Condensed Matter Theory"
+      description: "Exploring emergent phenomena in strongly correlated electron systems."
+      icon: "🔬"
+    - title: "Quantum Many-Body Systems"
+      description: "Developing analytical and numerical methods for quantum many-body problems."
+      icon: "⚛️"
+    - title: "Computational Physics"
+      description: "Leveraging high-performance computing and machine learning for physical simulations."
+      icon: "📐"
+    - title: "Statistical Mechanics"
+      description: "Phase transitions, critical phenomena, and non-equilibrium dynamics."
+      icon: "📊"
+
+publications:
+  title: "Research Output"
+  subtitle: "Selected Publications"
+
+projects:
+  title: "Projects"
+  items:
+    - title: "Quantum Simulator"
+      description: "An open-source framework for simulating quantum many-body systems."
+      url: "https://github.com/jwphys"
+    - title: "Lattice Monte Carlo"
+      description: "High-performance Monte Carlo library for lattice field theory."
+      url: "https://github.com/jwphys"
+
+notes:
+  title: "Study Notes"
+  subtitle: "Notes on physics, mathematics, and programming."
+
+footer:
+  copyright: "© 2026 Jiwen Chen. All rights reserved."
+  lang_toggle: "中 / EN"
