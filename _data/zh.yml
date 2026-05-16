@@ -11,7 +11,7 @@ home:
   affiliation: "西湖大学"
   bio: >
     我是西湖大学的博士研究生，导师为
-    <a href="https://zheng-yan-group.github.io/" target="_blank" rel="noopener">郑毅教授</a>。
+    <a href="https://zheng-yan-group.github.io/" target="_blank" rel="noopener">严正教授</a>。
     我的研究方向为量子磁性和自旋系统的相变问题，主要使用随机级数展开量子蒙特卡洛
     （SSE QMC）算法进行研究。此前曾做过磁性斯格明子、畴壁双半子及其电流驱动
     动力学方面的工作。
@@ -25,7 +25,7 @@ education:
     - period: "2026年8月 – 至今"
       institution: "西湖大学"
       degree: "博士研究生"
-      supervisor: "郑毅教授"
+      supervisor: "严正教授"
     - period: "2020年9月 – 2024年6月"
       institution: "深圳技术大学"
       degree: "应用物理学学士"
