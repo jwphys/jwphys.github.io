@@ -168,23 +168,37 @@ body {
 
 .bio-card {
   display: flex;
-  gap: 16px;
+  gap: 18px;
   align-items: flex-start;
-  background: linear-gradient(135deg, var(--white) 0%, #f6f9f5 100%);
-  border: 1px solid var(--stone);
+  background: var(--white);
+  border: 1px solid #e0dad0;
   border-left: 4px solid var(--vermillion);
   border-radius: 12px;
   padding: 24px 28px;
-  margin: 0 auto 32px;
-  max-width: 680px;
+  margin: 0 auto 36px;
+  max-width: 720px;
   text-align: left;
-  box-shadow: 0 2px 12px var(--shadow);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
 }
 
 .bio-icon {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   flex-shrink: 0;
-  margin-top: 2px;
+  margin-top: 3px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fef6f4;
+  border-radius: 6px;
+}
+
+.bio-text {
+  font-size: 0.95rem;
+  color: var(--ink-gray);
+  line-height: 1.85;
+  flex: 1;
 }
 
 .bio-text {
