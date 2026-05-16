@@ -64,10 +64,12 @@ layout: default
 
 <div class="section">
   <h2 class="section-title" data-i18n="publications.title">{{ site.data[site.lang].publications.title }}</h2>
-  {% for pub in site.data.publications reversed %}
+  {% assign pub_total = site.data.publications | size %}
+  {% for pub in site.data.publications %}
+  {% assign pub_num = pub_total | minus: forloop.index0 %}
   <div class="pub-item">
     <div class="pub-head">
-      <span class="pub-num">[{{ forloop.index }}]</span>
+      <span class="pub-num">[{{ pub_num }}]</span>
       <span class="pub-year">{{ pub.year }}</span>
     </div>
     <div class="pub-content">

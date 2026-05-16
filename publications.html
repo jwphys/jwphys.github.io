@@ -4,10 +4,12 @@ title: Publications
 i18n: publications.title
 ---
 <ul class="pub-list">
-  {% for pub in site.data.publications reversed %}
+  {% assign pub_total = site.data.publications | size %}
+  {% for pub in site.data.publications %}
+  {% assign pub_num = pub_total | minus: forloop.index0 %}
   <li class="pub-item">
     <div class="pub-head">
-      <span class="pub-num">[{{ forloop.index }}]</span>
+      <span class="pub-num">[{{ pub_num }}]</span>
       <span class="pub-year">{{ pub.year }}</span>
     </div>
     <div class="pub-content">
