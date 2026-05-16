@@ -536,13 +536,25 @@ body {
 
 /* ===== Prism.js overrides ===== */
 .post-content pre[class*="language-"] {
-  background: #1e1e2e !important;
-  border-radius: 8px;
+  background: rgba(30, 30, 46, 0.95) !important;
+  border-radius: 10px;
   padding: 20px 24px !important;
   font-size: 0.82rem;
-  line-height: 1.6;
-  margin: 20px 0;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  line-height: 1.65;
+  margin: 24px 0;
+  border-left: 3px solid;
+  border-image: linear-gradient(180deg, var(--celadon), var(--celadon-light)) 1;
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.06),
+    0 1px 4px rgba(0, 0, 0, 0.04);
+  font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.post-content pre[class*="language-"]:hover {
+  box-shadow:
+    0 8px 40px rgba(0, 0, 0, 0.10),
+    0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .post-content :not(pre) > code[class*="language-"] {
@@ -553,40 +565,150 @@ body {
   border-radius: 3px;
 }
 
+/* Code scrollbar */
+.post-content pre[class*="language-"]::-webkit-scrollbar {
+  height: 5px;
+}
+
+.post-content pre[class*="language-"]::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 3px;
+}
+
+.post-content pre[class*="language-"]::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 3px;
+}
+
+.post-content pre[class*="language-"]::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Line numbers styling */
+.line-numbers .line-numbers-rows {
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  padding-right: 8px;
+}
+
+.line-numbers-rows > span:before {
+  color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Toolbar (copy + language) */
 div.code-toolbar {
   position: relative;
 }
 
 div.code-toolbar > .toolbar {
   position: absolute;
-  top: 8px;
-  right: 12px;
+  top: 10px;
+  right: 14px;
   opacity: 0;
-  transition: opacity 0.2s;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  transform: translateY(-2px);
 }
 
 div.code-toolbar:hover > .toolbar {
   opacity: 1;
+  transform: translateY(0);
 }
 
 div.code-toolbar > .toolbar > .toolbar-item > button {
-  background: rgba(255, 255, 255, 0.1) !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   color: #cdd6f4 !important;
-  border: 1px solid rgba(255, 255, 255, 0.15) !important;
-  border-radius: 4px !important;
-  padding: 3px 10px !important;
-  font-size: 0.75rem !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 6px !important;
+  padding: 4px 12px !important;
+  font-size: 0.72rem !important;
+  font-family: 'Inter', sans-serif;
   cursor: pointer;
   box-shadow: none !important;
+  transition: background 0.2s;
 }
 
 div.code-toolbar > .toolbar > .toolbar-item > button:hover {
-  background: rgba(255, 255, 255, 0.2) !important;
+  background: rgba(255, 255, 255, 0.16) !important;
 }
 
 div.code-toolbar > .toolbar > .toolbar-item > span {
-  color: #a6adc8 !important;
-  font-size: 0.75rem !important;
+  color: rgba(255, 255, 255, 0.35) !important;
+  font-size: 0.72rem !important;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+/* ===== Study Notes Cards ===== */
+.notes-grid {
+  display: grid;
+  gap: 20px;
+  margin-top: 8px;
+}
+
+.note-card {
+  background: var(--white);
+  border: 1px solid var(--stone);
+  border-left: 3px solid var(--celadon);
+  border-radius: 10px;
+  padding: 24px 28px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.note-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.note-card .note-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ink-black);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+  transition: color 0.2s;
+}
+
+.note-card .note-title:hover {
+  color: var(--celadon);
+}
+
+.note-card .note-excerpt {
+  font-size: 0.88rem;
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.note-card .note-meta {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  color: var(--text-light);
+}
+
+.note-card .note-meta time {
+  color: var(--celadon);
+  font-weight: 500;
+}
+
+/* ===== Post layout (single note page) ===== */
+.post {
+  background: var(--white);
+  border: 1px solid var(--stone);
+  border-radius: 10px;
+  padding: 36px 40px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03);
+}
+
+@media (max-width: 640px) {
+  .post {
+    padding: 20px;
+  }
 }
 
 /* ===== Footer ===== */
