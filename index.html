@@ -6,7 +6,10 @@ layout: default
   <h1 data-i18n="home.title">{{ site.data[site.lang].home.title }}</h1>
   <p class="subtitle" data-i18n="home.subtitle">{{ site.data[site.lang].home.subtitle }}</p>
   <p class="affiliation" data-i18n="home.affiliation">{{ site.data[site.lang].home.affiliation }}</p>
-  <p class="bio" data-i18n="home.bio">{{ site.data[site.lang].home.bio }}</p>
+  <div class="bio-card">
+    <div class="bio-icon">🎯</div>
+    <div class="bio-text" data-i18n="home.bio">{{ site.data[site.lang].home.bio }}</div>
+  </div>
   <div class="hero-links">
     <a href="mailto:{{ site.data[site.lang].home.email }}">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>

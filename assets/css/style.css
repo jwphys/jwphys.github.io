@@ -163,21 +163,40 @@ body {
 .hero .affiliation {
   font-size: 0.95rem;
   color: var(--text-light);
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
-.hero .bio {
-  font-size: 1rem;
-  color: var(--ink-gray);
+.bio-card {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: linear-gradient(135deg, var(--white) 0%, #f6f9f5 100%);
+  border: 1px solid var(--stone);
+  border-left: 4px solid var(--vermillion);
+  border-radius: 12px;
+  padding: 24px 28px;
+  margin: 0 auto 32px;
   max-width: 680px;
-  margin: 0 auto 28px;
-  line-height: 1.9;
+  text-align: left;
+  box-shadow: 0 2px 12px var(--shadow);
+}
+
+.bio-icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.bio-text {
+  font-size: 0.95rem;
+  color: var(--ink-gray);
+  line-height: 1.85;
 }
 
 .hero-links {
   display: flex;
   justify-content: center;
-  gap: 16px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
@@ -187,12 +206,18 @@ body {
   text-decoration: none;
   display: inline-flex;
   align-items: center;
-  gap: 4px;
-  transition: color 0.2s;
+  gap: 6px;
+  padding: 6px 14px;
+  background: var(--white);
+  border: 1px solid var(--stone);
+  border-radius: 8px;
+  transition: all 0.2s;
 }
 
 .hero-links a:hover {
   color: var(--vermillion);
+  border-color: var(--vermillion);
+  background: #fef6f4;
 }
 
 /* ===== Section Cards ===== */
@@ -217,6 +242,7 @@ body {
 .research-card {
   background: var(--white);
   border: 1px solid var(--stone);
+  border-top: 3px solid var(--celadon);
   border-radius: 8px;
   padding: 24px;
   transition: transform 0.2s, box-shadow 0.2s;
@@ -344,6 +370,7 @@ body {
 .project-item {
   background: var(--white);
   border: 1px solid var(--stone);
+  border-left: 3px solid var(--celadon-light);
   border-radius: 8px;
   padding: 20px 24px;
   transition: transform 0.2s, box-shadow 0.2s;
@@ -573,6 +600,18 @@ body {
   padding-bottom: 10px;
   border-bottom: 2px solid var(--celadon);
   letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-title::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 1.2em;
+  background: var(--vermillion);
+  border-radius: 2px;
 }
 
 .research-grid {
