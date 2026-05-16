@@ -135,8 +135,8 @@ body {
 }
 
 .hero-avatar {
-  width: 140px;
-  height: 140px;
+  width: 210px;
+  height: 210px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 28px;
