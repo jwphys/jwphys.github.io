@@ -7,7 +7,7 @@ layout: default
   <p class="subtitle" data-i18n="home.subtitle">{{ site.data[site.lang].home.subtitle }}</p>
   <p class="affiliation" data-i18n="home.affiliation">{{ site.data[site.lang].home.affiliation }}</p>
   <div class="bio-card">
-    <div class="bio-text" data-i18n="home.bio">{{ site.data[site.lang].home.bio | markdownify }}</div>
+    <div class="bio-text" data-i18n-html="home.bio">{{ site.data.en.home.bio }}</div>
   </div>
   <div class="hero-links">
     <a href="mailto:{{ site.data[site.lang].home.email }}">
