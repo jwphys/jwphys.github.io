@@ -1002,3 +1002,131 @@ a:hover {
 ::selection {
   background: rgba(91, 138, 114, 0.2);
 }
+
+/* ===== Markdown Preview Container ===== */
+.md-preview-container {
+  border: 1px solid var(--stone);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 24px 0;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+}
+
+.md-preview-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  background: var(--stone-light);
+  border-bottom: 1px solid var(--stone);
+}
+
+.md-preview-label {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--text-light);
+}
+
+.md-preview-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.md-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: var(--celadon);
+  text-decoration: none;
+  padding: 4px 12px;
+  border: 1px solid var(--celadon);
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.md-download-btn:hover {
+  background: var(--celadon);
+  color: var(--white);
+}
+
+.md-preview-scroll {
+  max-height: 480px;
+  overflow-y: auto;
+  background: var(--white);
+}
+
+.md-preview-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.md-preview-scroll::-webkit-scrollbar-track {
+  background: var(--stone-light);
+}
+
+.md-preview-scroll::-webkit-scrollbar-thumb {
+  background: var(--stone);
+  border-radius: 3px;
+}
+
+.md-preview-content {
+  padding: 20px 24px;
+}
+
+.md-preview-content h2 {
+  font-family: var(--font-zh);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--ink-black);
+  margin: 20px 0 10px;
+}
+
+.md-preview-content h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink-black);
+  margin: 16px 0 8px;
+}
+
+.md-preview-content p {
+  font-size: 0.88rem;
+  color: var(--ink-gray);
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.md-preview-content code {
+  font-size: 0.82em;
+  background: var(--stone-light);
+  padding: 1px 4px;
+  border-radius: 3px;
+  color: var(--vermillion);
+}
+
+.md-preview-content pre {
+  background: #1a1b26;
+  border-radius: 6px;
+  padding: 14px 18px;
+  overflow-x: auto;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  margin: 12px 0;
+  font-family: 'JetBrains Mono', monospace;
+  color: #c0caf5;
+}
+
+.md-preview-content pre code {
+  background: none;
+  color: inherit;
+  padding: 0;
+}
+
+@media (max-width: 640px) {
+  .md-preview-scroll {
+    max-height: 320px;
+  }
+
+  .md-preview-content {
+    padding: 16px;
+  }
+}
