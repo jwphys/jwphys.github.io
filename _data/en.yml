@@ -10,11 +10,12 @@ home:
   subtitle: "PhD Student"
   affiliation: "Westlake University"
   bio: >
-    I am a PhD student at Westlake University under the supervision of Prof.
-    Zheng Yan. My research focuses on quantum magnetism and phase transitions
-    of spin systems, primarily using stochastic series expansion quantum Monte
-    Carlo (SSE QMC) algorithms. Previously, I have worked on magnetic skyrmions,
-    domain-wall bimerons, and their current-driven dynamics.
+    I am a PhD student at Westlake University under the supervision of
+    <a href="https://zheng-yan-group.github.io/" target="_blank" rel="noopener">Prof. Zheng Yan</a>.
+    My research focuses on quantum magnetism and phase transitions of spin systems,
+    primarily using stochastic series expansion quantum Monte Carlo (SSE QMC)
+    algorithms. Previously, I have worked on magnetic skyrmions, domain-wall
+    bimerons, and their current-driven dynamics.
   email: "chenjiwen@westlake.edu.cn"
   google_scholar: ""
   orcid: "https://orcid.org/0009-0008-4027-4512"
