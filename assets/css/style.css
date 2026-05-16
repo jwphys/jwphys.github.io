@@ -541,12 +541,9 @@ body {
   background: #1a1b26 !important;
   border-radius: 10px;
   padding: 20px 24px !important;
-  padding-left: 3.8em !important;
   font-size: 0.82rem;
   line-height: 1.65;
   margin: 24px 0;
-  border-left: 3px solid;
-  border-image: linear-gradient(180deg, var(--celadon), var(--celadon-light)) 1;
   box-shadow:
     0 4px 24px rgba(0, 0, 0, 0.08),
     0 1px 4px rgba(0, 0, 0, 0.04);
@@ -654,18 +651,6 @@ body {
 
 .post-content pre[class*="language-"]::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.2);
-}
-
-/* Line numbers styling */
-.line-numbers .line-numbers-rows {
-  border-right: 1px solid rgba(255, 255, 255, 0.07);
-  padding-right: 12px;
-  left: 0 !important;
-}
-
-.line-numbers-rows > span:before {
-  color: rgba(255, 255, 255, 0.35) !important;
-  font-size: 0.78rem !important;
 }
 
 /* Toolbar (copy + language) */
