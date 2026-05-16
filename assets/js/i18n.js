@@ -38,6 +38,11 @@
     }
 
     localStorage.setItem(STORAGE_KEY, lang);
+
+    // Re-render MathJax if present (content with formulas may have changed)
+    if (window.MathJax && MathJax.typesetPromise) {
+      MathJax.typesetPromise();
+    }
   }
 
   function init() {

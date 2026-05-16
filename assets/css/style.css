@@ -534,35 +534,107 @@ body {
   border-radius: 3px;
 }
 
-/* ===== Prism.js overrides ===== */
+/* ===== Prism.js overrides (Tokyo Night × Celadon) ===== */
+
+/* Base code block */
 .post-content pre[class*="language-"] {
-  background: rgba(30, 30, 46, 0.95) !important;
+  background: #1a1b26 !important;
   border-radius: 10px;
   padding: 20px 24px !important;
+  padding-left: 3.8em !important;
   font-size: 0.82rem;
   line-height: 1.65;
   margin: 24px 0;
   border-left: 3px solid;
   border-image: linear-gradient(180deg, var(--celadon), var(--celadon-light)) 1;
   box-shadow:
-    0 4px 24px rgba(0, 0, 0, 0.06),
+    0 4px 24px rgba(0, 0, 0, 0.08),
     0 1px 4px rgba(0, 0, 0, 0.04);
   font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
-  transition: box-shadow 0.25s ease, transform 0.25s ease;
+  transition: box-shadow 0.25s ease;
 }
 
 .post-content pre[class*="language-"]:hover {
   box-shadow:
-    0 8px 40px rgba(0, 0, 0, 0.10),
+    0 8px 40px rgba(0, 0, 0, 0.12),
     0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
+/* No extra code padding needed (Prism handles it) */
+
+/* Inline code */
 .post-content :not(pre) > code[class*="language-"] {
   font-size: 0.85em;
   background: var(--stone-light);
   color: var(--vermillion);
   padding: 2px 6px;
   border-radius: 3px;
+}
+
+/* Token colors — Celadon-adapted Tokyo Night */
+.post-content .token.comment,
+.post-content .token.prolog,
+.post-content .token.doctype,
+.post-content .token.cdata {
+  color: #565f89 !important;
+  font-style: italic;
+}
+
+.post-content .token.punctuation {
+  color: #7dc2e6 !important;
+}
+
+.post-content .token.property,
+.post-content .token.tag,
+.post-content .token.boolean,
+.post-content .token.number,
+.post-content .token.constant,
+.post-content .token.symbol,
+.post-content .token.deleted {
+  color: #ff9e64 !important;
+}
+
+.post-content .token.selector,
+.post-content .token.attr-name,
+.post-content .token.string,
+.post-content .token.char,
+.post-content .token.builtin,
+.post-content .token.inserted {
+  color: #9ece6a !important;
+}
+
+.post-content .token.operator,
+.post-content .token.entity,
+.post-content .token.url,
+.post-content .language-css .token.string,
+.post-content .style .token.string {
+  color: #89ddff !important;
+}
+
+.post-content .token.atrule,
+.post-content .token.attr-value,
+.post-content .token.keyword {
+  color: #bb9af7 !important;
+}
+
+.post-content .token.function,
+.post-content .token.class-name {
+  color: #7aa2f7 !important;
+}
+
+.post-content .token.regex,
+.post-content .token.important,
+.post-content .token.variable {
+  color: #f7768e !important;
+}
+
+.post-content .token.important,
+.post-content .token.bold {
+  font-weight: bold;
+}
+
+.post-content .token.italic {
+  font-style: italic;
 }
 
 /* Code scrollbar */
@@ -586,12 +658,14 @@ body {
 
 /* Line numbers styling */
 .line-numbers .line-numbers-rows {
-  border-right: 1px solid rgba(255, 255, 255, 0.08);
-  padding-right: 8px;
+  border-right: 1px solid rgba(255, 255, 255, 0.07);
+  padding-right: 12px;
+  left: 0 !important;
 }
 
 .line-numbers-rows > span:before {
-  color: rgba(255, 255, 255, 0.2) !important;
+  color: rgba(255, 255, 255, 0.35) !important;
+  font-size: 0.78rem !important;
 }
 
 /* Toolbar (copy + language) */
@@ -617,7 +691,7 @@ div.code-toolbar > .toolbar > .toolbar-item > button {
   background: rgba(255, 255, 255, 0.08) !important;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  color: #cdd6f4 !important;
+  color: #a9b1d6 !important;
   border: 1px solid rgba(255, 255, 255, 0.12) !important;
   border-radius: 6px !important;
   padding: 4px 12px !important;
@@ -629,11 +703,12 @@ div.code-toolbar > .toolbar > .toolbar-item > button {
 }
 
 div.code-toolbar > .toolbar > .toolbar-item > button:hover {
-  background: rgba(255, 255, 255, 0.16) !important;
+  background: rgba(255, 255, 255, 0.18) !important;
+  color: #c0caf5 !important;
 }
 
 div.code-toolbar > .toolbar > .toolbar-item > span {
-  color: rgba(255, 255, 255, 0.35) !important;
+  color: rgba(255, 255, 255, 0.30) !important;
   font-size: 0.72rem !important;
   font-family: 'Inter', sans-serif;
   letter-spacing: 0.02em;
@@ -654,6 +729,7 @@ div.code-toolbar > .toolbar > .toolbar-item > span {
   border-radius: 10px;
   padding: 24px 28px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
 }
 
 .note-card:hover {
@@ -684,7 +760,7 @@ div.code-toolbar > .toolbar > .toolbar-item > span {
 
 .note-card .note-meta {
   display: flex;
-  gap: 12px;
+  gap: 10px;
   align-items: center;
   flex-wrap: wrap;
   font-size: 0.8rem;
@@ -694,6 +770,44 @@ div.code-toolbar > .toolbar > .toolbar-item > span {
 .note-card .note-meta time {
   color: var(--celadon);
   font-weight: 500;
+}
+
+/* Tag filter bar */
+.tag-filter {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--stone);
+}
+
+.tag-filter-btn {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  background: var(--white);
+  border: 1px solid var(--stone);
+  border-radius: 20px;
+  padding: 4px 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.tag-filter-btn:hover {
+  border-color: var(--celadon);
+  color: var(--celadon);
+}
+
+.tag-filter-btn.active {
+  background: var(--celadon);
+  color: var(--white);
+  border-color: var(--celadon);
+}
+
+/* Hidden state for filtering */
+.note-card.hidden {
+  display: none;
 }
 
 /* ===== Post layout (single note page) ===== */

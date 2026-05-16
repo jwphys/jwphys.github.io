@@ -19,10 +19,11 @@
   <script>
     MathJax = {
       tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
-      svg: { fontCache: 'global' }
+      svg: { fontCache: 'global' },
+      startup: { typeset: false }
     };
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
   <!-- Prism.js for code highlighting -->
   <link href="https://cdn.jsdelivr.net/npm/prismjs@1/themes/prism-tomorrow.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/prismjs@1/plugins/line-numbers/prism-line-numbers.min.css" rel="stylesheet">
@@ -69,6 +70,10 @@
       document.querySelectorAll('pre[class*="language-"]').forEach(function(pre) {
         pre.classList.add('line-numbers');
       });
+      // Trigger MathJax typesetting after Prism has processed code blocks
+      if (window.MathJax && MathJax.typesetPromise) {
+        MathJax.typesetPromise();
+      }
     });
   </script>
 </body>

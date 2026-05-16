@@ -6,17 +6,18 @@ title: Tags
 {% for tag in tags %}
 <div class="tag-section">
   <h2 id="{{ tag | slugify }}">{{ tag }}</h2>
-  <ul class="post-list">
+  <div class="notes-grid">
     {% for post in site.posts %}
       {% if post.tags contains tag %}
-      <li class="post-item">
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        <div class="meta">
+      <div class="note-card">
+        <a href="{{ post.url | relative_url }}" class="note-title">{{ post.title }}</a>
+        <div class="note-excerpt">{{ post.excerpt | strip_html | truncatewords: 35 }}</div>
+        <div class="note-meta">
           <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
         </div>
-      </li>
+      </div>
       {% endif %}
     {% endfor %}
-  </ul>
+  </div>
 </div>
 {% endfor %}
